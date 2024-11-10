@@ -45,7 +45,7 @@ import orderRouter from "./routes/orderRoute.js";
 import paymentRoutes from "./routes/paymentRoutes.js";
 // App configuration
 const app = express();
-const port = 3000; // Port is directly in the code
+const port = process.env.PORT || 3000; // Port is directly in the code
 
 // Middleware
 app.use(express.json());
